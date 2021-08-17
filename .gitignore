@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+/private
+/bkp
 
 # local env files
 .env.local
