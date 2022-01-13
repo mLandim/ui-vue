@@ -6,7 +6,6 @@
       :header="tHeader" 
       :body="tBody" 
       :pageLimit="40" 
-      :bodyHeight="600" 
       :selectionField="true" 
       :bodyLoading="loading"
       :labelsList="tooltipList"
@@ -143,5 +142,8 @@ export default {
 
 .table-container {
   font-size: 11px;
+  padding: 40px;
+  height: 100vh;
+  box-sizing: border-box;
 }
 </style>
