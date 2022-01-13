@@ -116,7 +116,7 @@
                         <span class="material-icons" :class="('mdIconSize' in action) ? `md-${action.mdIconSize}` : null">{{action.mdIcon}}</span>
                       </div>
                       <!-- bootstrap icon  -->
-                      <b-icon v-if="'bootstrapIcon' in action" :icon="action.bootstrapIcon" :style="`width: 20px; height: 20px;`" ></b-icon>
+                      <!-- <b-icon v-if="'bootstrapIcon' in action" :icon="action.bootstrapIcon" :style="`width: 20px; height: 20px;`" ></b-icon> -->
                       
                     </div>
                   </div>
