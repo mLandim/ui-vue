@@ -1,8 +1,6 @@
-![npm](https://img.shields.io/npm/v/vue2-syara-ui)
-![npm](https://img.shields.io/npm/dw/vue2-syara-ui)
-![NPM](https://img.shields.io/npm/l/vue2-syara-ui)
-
-
+![npm](https://img.shields.io/npm/v/@syara/ui-vue?style=flat-square)
+![NPM](https://img.shields.io/npm/l/@syara/ui-vue?style=flat-square)
+![npm](https://img.shields.io/npm/dt/@syara/ui-vue?style=flat-square)
 # Syara UI Tools
 
 User interface tools for web applications
@@ -18,7 +16,7 @@ npm install @syara/ui-vue
 
 ## Usage
 
-Register components with .use()
+Import and register components with `.use()`. And import css styles.
 ``` js
 // main.js
 import { createApp } from 'vue'
@@ -44,7 +42,7 @@ createApp(App).use(SyaraUi).mount('#app')
 :selectionField="true" 
 :bodyLoading="loading"
 @selectedLines="selectedItens=$event" 
-@actionCallbackFunction="manageCallbackFunctions($event)" />
+@callbackFunctions="manageCallbackFunctions($event)" />
 
 ```
 
@@ -79,12 +77,13 @@ export default {
                     {
                         callback:'testReturnFunction', // action called whenever the icon is clicked (must be mapped with method manageCallbackFunctions)
                         info: 'id', // value presented besides icon
-                        materialIcon: 'attach_file' // it's possible to use a svg code as icon -> just replace the key materialIcon by icon and write/paste svg code as a string
+                        mdIcon: 'attach_file' // it's possible to use a svg code as icon -> just replace the key materialIcon by icon and write/paste svg code as a string
                     },
                     {
                         callback:'testReturnFunction2', 
                         info: 'id', 
-                        materialIcon: 'forum' 
+                        mdIcon: 'forum',
+                        mdIconSize: 18 // optional, in value in pixels 
                     }
                 ] 
             }
